@@ -62,24 +62,29 @@ let games = [
 // Select the button with the class `page`.
 // When the button is clicked do the following:
 
-//- Change the title of the page (the value of the title element in the head) to "Updated title".
-//- Change the background colour of the whole page to "yellow".
-//- Change the color of the `h1` element to "green".
-//- Change the `h1` element's font to "impact".
+//- Change the title of the page (the value of the title element in the head) to "Updated title". ok
+//- Change the background colour of the whole page to "yellow". ok 
+//- Change the color of the `h1` element to "green". ok
+//- Change the `h1` element's font to "impact". ok
 //- Change the value of the `h1` element to be a link.
 //- Remove the list style and padding from the `ul` element.
 
 const btn1 = document.querySelector(".page")
-const title = document.querySelector("meta.title");
+const btn2 = document.querySelector(".price");
+const webtitle = document.querySelector("title");
 const body = document.querySelector("body");
 const heading = document.querySelector("h1");
+const calctotal = document.querySelector("#total");
+const gamelist = document.querySelector(".games");
 
 
 function changeOne() {
-    // title.innerHTML = "Update title";
+    webtitle.innerHTML = "Updated title";
     body.style.backgroundColor = "yellow";
     heading.style.color = "green";
     heading.style.fontFamily = "impact";
+    heading.getAttribute = "href";
+    heading.setAttribute = "href";
 
 }
 btn1.onclick = changeOne;
