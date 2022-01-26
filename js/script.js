@@ -127,6 +127,8 @@ function changeOne() {
     document.querySelector("h1").innerHTML = 
     `<a href="#">Progamming Foundations Course Assigment</a>`;
     console.log(changeOne);
+	// riktig måte
+	//heading.innerHTML = `<a href="#">${heading.textContent}</a>`;
 
 }
 btn1.onclick = changeOne;
